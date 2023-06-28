@@ -20,7 +20,7 @@ public class StepDefinitions {
 
     @Given("I am on the Amazon Australia website")
     public void iAmOnAmazonAustraliaWebsite() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C:/Users/Rajiv/Downloads/APIFramework/src/test/java/resources/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", ".\\src\\test\\java\\resources\\chromedriver.exe");
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, Duration.ofSeconds(2));
         driver.get("https://www.amazon.com.au");
